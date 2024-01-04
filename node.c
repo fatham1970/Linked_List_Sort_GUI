@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "node.h"
 
-// Function to create an empty linked list
 // creer lister vide
 Node *createLinkedList()
 {
@@ -60,11 +59,9 @@ Node *swapNodes(Node *head, int data1, int data2)
 
     if (curr1 == NULL || curr2 == NULL)
     {
-        // One or both nodes not found
         return head;
     }
 
-    // If data1 is not in the head, update the previous node's next pointer
     // si val tete = nil tete pointe sur node
     if (prev1 != NULL)
     {
@@ -75,7 +72,6 @@ Node *swapNodes(Node *head, int data1, int data2)
         head = curr2;
     }
 
-    // If data2 is not in the head, update the previous node's next pointer
     // si val2 n'est pas dans la tete , la tete pointe sur node 2
     if (prev2 != NULL)
     {
